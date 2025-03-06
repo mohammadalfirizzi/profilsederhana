@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiculum Vitae</title>
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 5px;
+            position: sticky;
+            top: 0;
+            background-color: #00a2c6;
+        }
+
+        header nav ul {
+            padding-left: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem 1rem;
+        }
+
+        header nav li {
+            list-style-type: none;
+        }
+
+        header nav li a {
+            padding: 0.5rem 1.5rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: white;
+            transition: all 0.2s ease-in-out;
+        }
+
+        header nav li:hover a {
+            background-color: #425c77;
+            color: white;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        #content {
+            flex: 4;
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 1rem 2rem;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        aside {
+            flex: 2;
+        }
+
+        .featured-image {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+
+        footer {
+            padding: 20px;
+            color: white;
+            background-color: #00a2c6;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 90%;
+            /* Mengisi lebar parent container */
+            max-width: 400px;
+            /* Batas maksimum panjang */
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        button {
+            background-color: #425c77;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#profil">Profil</a></li>
+                <li><a href="#pengalaman">Pengalaman</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#formulir">Formulir</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 class="text-center">Selamat Datang di Profil Saya</h1>
+    <main>
+        <div id="content">
+            <section id="profil" class="card">
+                <img src="gambar.jpg" alt="Profil Rizzi" class="featured-image">
+                <h3>Mohammad Alfi Rizzi</h3>
+                <p>Saya ada seorang QA Engineer dan Web Programmer yang sedang fokus ke Web Scrapper dan tertarik
+                    berbagai
+                    macam
+                    teknologi serta bisnis</p>
+            </section>
+            <section id="pengalaman" class="card">
+                <h3>Datfar Pengalaman / Proyek</h3>
+                <table border="1" cellpadding="10" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Proyek</th>
+                            <th>Deskripsi</th>
+                            <th>Tahun</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Aplikasi Monitoring IoT</td>
+                            <td>Aplikasi untuk memantau suhu secara real-time</td>
+                            <td>2024</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Website Jualan Online</td>
+                            <td>Membuat Toko Online</td>
+                            <td>2023</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="kontak" class="card">
+                <h3>Kontak Saya</h3>
+                <p>Email : <a href="mailto:mohammadalfirizzi@gmail.com">mohammadalfirizzi@gmail.com</a></p>
+                <p>Whatsapp : <a href="https://wa.me/" target="_blank">083832071086</a></p>
+            </section>
+        </div>
+
+        <aside>
+            <section id="formulir" class="card">
+                <h3>Formulir Kontak</h3>
+                <form action="" method="post">
+                    <label for="nama">Nama:</label><br>
+                    <input type="text" id="nama" name="nama" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="pesan">Pesan:</label><br>
+                    <textarea id="pesan" name="pesan" rows="4" required></textarea><br><br>
+
+                    <button type="submit">Kirim</button>
+                </form>
+            </section>
+        </aside>
+    </main>
+    <footer>
+        <p>Curiculum Vitae &#169; 2025</p>
+    </footer>
+</body>
+
+</html>
